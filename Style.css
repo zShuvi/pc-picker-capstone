@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap%27');
+  * {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  li, a, button.contact {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%;
+    background-color:#111111;
+  }
+
+  body { 
+    height: 100vh;
+    background-color:bisque ;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+.logo {
+    cursor: pointer;
+  }
+
+  .nav_links a,.cta,.overlay__content a {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+  .nav_links{
+    text-align: center;
+  }
+
+  .nav_links ul{
+    list-style: none;
+    display: inline-flex;
+  }
+
+  .nav_links ul li{ 
+    display: inline-block;
+    margin: 15px;
+    padding: 15px;
+  }
+
+  .nav_links ul li a{
+    transition: all 0.3 ease 0s;
+  }
+
+  .active, .nav_links ul li:hover{
+    background-color:crimson;
+  }
+
+  .active, .nav_links ul li:hover ul li:hover{
+    background-color:crimson;
+  }
+
+  .dropdown {
+      position: relative;
+      display: inline-block;
+  }
+
+  .sub_menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .storage_menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .accessories_menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .dropdown:hover .sub_menu {
+    display: block;
+  }
+
+  .sub_menu ul li {
+    display: block;
+  }
+
+  .storage_menu ul li {
+    display: block;
+  }
+
+  .accessories_menu ul li {
+    display: block;
+  }
+
+  .nav_links ul li:hover .sub_menu 
+  {
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background-color:#111111;
+  }
+
+  .sub_menu ul li:hover .storage_menu{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background-color:#111111;
+  }
+
+  .sub_menu ul li:hover .accessories_menu{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -15px;
+    background-color:#111111;
+  }
+
+  .nav_links ul li:hover .sub-menu ul
+  {
+    display: block;
+    margin: 10px;
+    background-color:#111111;
+  }  
+
+  .sub-menu ul li:hover .storage_menu ul{
+    display: block;
+    margin: 10px;
+    background-color:#111111;
+  }
+
+  .sub-menu ul li:hover .accessories_menu ul{
+    display: block;
+    margin: 10px;
+    background-color:#111111;
+  }
+
+  .nav_links ul li:hover .sub-menu ul li
+  {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .sub-menu ul li:hover .storage-menu ul li
+  {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .sub-menu ul li:hover .accessories_menu ul li
+  {
+    width: 150px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    
+    border-radius: 0;
+    text-align: left;
+  }
+
+  .nav_links ul li:hover .sub-menu ul li:last-child
+  {
+    border-bottom: none;
+  }
+
+  .sub-menu ul li:hover .storage-menu ul li:last-child
+  {
+    border-bottom: none;
+  }
+
+  .dropdown > a {
+    display: block;
+  }
+
+  .active {
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  .nav_links li a:hover .Sub_menu{
+    display: block;
+  }
+
+  button.contact{
+    padding: 9px 25px;
+    background-color: rgba(0,136,169,1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.35 ease 0s;
+  }
+
+  button.contact:hover{
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  .cta {
+    padding: 9px 25px;
+    background-color: rgba(0, 136, 169, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+    }
+
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+
+  .storage_menu{
+    display:none;
+    background-color: #24252a;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .accessories_menu{
+    display:none;
+    background-color: #24252a;
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+
+  .search{
+    background-color: #24252a;
+    height: 25px;
+    width: 18px;
+    padding-right: 5px;
+  }
+
+  
